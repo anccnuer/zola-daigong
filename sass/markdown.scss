@@ -1,0 +1,142 @@
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$color-text: #333;
+$color-link: #0066cc;
+$color-link-hover: #004499;
+$color-blockquote: #666;
+$color-border: #ddd;
+$color-table-odd: #f9f9f9;
+
+// 基础样式
+body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $color-text;
+}
+
+// 标题
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+// 段落
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: 2rem;
+    font-size: 1.2rem;
+}
+
+// 引用
+blockquote {
+    color: $color-blockquote;
+    border-left: 4px solid $color-border;
+    padding-left: 1em;
+    padding: 1rem;
+    border: thin solid $color-blockquote;
+    p {
+        text-indent: 0;
+    }
+}
+
+// 图片
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// 链接
+a {
+    color: $color-link;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+}
+
+// 列表
+ul,
+ol {
+    font-size: 1.2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+// 表格
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table th,
+table td {
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid $color-border;
+}
+
+table th {
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: $color-table-odd;
+}
+
+// 响应式调整
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    h3 {
+        font-size: 1.15em;
+    }
+}

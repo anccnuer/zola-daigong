@@ -1,0 +1,86 @@
+@import "https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css";
+:root {
+    font-family: 'Zhuque Fangsong (technical preview)';
+}
+@font-face {
+    font-family: Jinghua;
+    src: url('./assets/jkhx.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 46vw;
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    margin: auto;
+    @media screen and (max-width:700px) {
+        width: 95vw;
+    }
+}
+#container {
+    width: 100%;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem 0 0.5rem 0;
+    h1 {
+        font-size: 2.5rem;
+    }
+    .eomji {
+        font-size: 2rem;
+        margin: 1rem;
+        @media screen and (max-width:380px) {
+            font-size: 1.6rem;
+            border: 3px solid;
+        }
+    }
+    #switch-on {
+        font-size: 1.5rem;
+        margin-left: 0.8rem;
+    }
+    #menu {
+        font-size: 1.5rem;
+        margin-left: 4rem;
+        display: none;
+        transition: all 1s;
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.4rem;
+            font-size: 1.4rem;
+            color: #2290e9;
+            font-weight: bolder;
+            margin: 0 0.5rem;
+            @media screen and (max-width:380px) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    text-align: center;
+}
+#go-top {
+    font-size: 1.2rem;
+    display: block;
+    text-align: right;
+    margin: 0 3rem 1rem 0;
+    margin-right: 3rem;
+    text-decoration: underline #999;
+    color: #333;
+}
+
+
+#copyright {
+    color: #999;
+    span {
+        color: red;
+    }
+}

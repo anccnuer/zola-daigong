@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% import "macros/post-list.html" as list -%}
+
+{% block content %}
+<div class="lists">
+  {% for page in section.pages %}
+    {{ list::list(page=page) }}
+  {% endfor %}
+</div>
+{% endblock content %}

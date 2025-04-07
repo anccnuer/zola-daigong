@@ -1,0 +1,17 @@
+{% macro header() %}
+<div id="header">
+    {% if not page.path %}
+    <span class="eomji">🙃</span>
+    <h1>怠工日志</h1>
+    <span id="switch-on" onclick="switchon()">>></span>
+    <div id="menu">
+        <a href="#">时间轴</a>
+        <a href="#">关于</a>
+        <span id="switch-off" onclick="switchoff()"><<</span>
+    </div>
+    {% endif %}
+</div>
+{% if not page.path %}
+<hr>
+{% endif %}
+{% endmacro header %}

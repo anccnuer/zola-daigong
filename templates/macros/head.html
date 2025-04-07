@@ -1,0 +1,27 @@
+{% macro head() %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ get_url(path="img/icon.png", trailing_slash=false) }}" type="png">
+    <link rel="stylesheet" href="{{ get_url(path="layout.css", trailing_slash=false) }}">
+    <script src="{{ get_url(path="main.js", trailing_slash=false) }}"></script>
+    {% if page.path %}
+    <link rel="stylesheet" href="{{ get_url(path="lib/monokai-sublime.min.css", trailing_slash=false) }}">
+    <link rel="stylesheet" href="{{ get_url(path="page.css", trailing_slash=false) }}">
+    <script src="{{ get_url(path="lib/highlight.min.js", trailing_slash=false) }}"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    {% else %}
+    <link rel="stylesheet" href="{{ get_url(path="index.css", trailing_slash=false) }}">
+    {% endif %}
+
+    <title>
+        {% if page.path %}
+        {{ page.title }}{{ current_path | safe }}
+        {% else %}
+        {{ config.title }}
+        {% endif %}
+    </title>
+</head>
+{% endmacro head %}

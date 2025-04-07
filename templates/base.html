@@ -1,0 +1,20 @@
+{% import "macros/head.html" as head_macros -%}
+{% import "macros/header.html" as header_macros -%}
+{% import "macros/footer.html" as footer_macros -%}
+<!DOCTYPE html>
+<html>
+
+{{ head_macros::head() }}
+
+<body>
+  <main>
+    {{ header_macros::header() }}
+    <div id="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    {{ footer_macros::footer() }}
+  </main>
+</body>
+
+</html>
