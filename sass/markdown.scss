@@ -52,6 +52,7 @@ blockquote {
     padding-left: 1em;
     padding: 1rem;
     border: thin solid $color-blockquote;
+
     p {
         text-indent: 0;
     }
@@ -85,7 +86,8 @@ ol {
     font-size: 1.2rem;
     margin-top: 1em;
     margin-bottom: 1em;
-    padding-left: 1.5em;
+    margin-left: 0.8rem;
+    // padding-left: 1.5em;
 }
 
 ul {
@@ -139,6 +141,7 @@ table tr:nth-child(even) {
     h3 {
         font-size: 1.15em;
     }
+
     blockquote {
         margin: 0;
     }
