@@ -1,10 +1,11 @@
-@import "https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css";
+// @import "https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css";
 :root {
     font-family: 'Zhuque Fangsong (technical preview)';
+    
 }
 @font-face {
-    font-family: Jinghua;
-    src: url('./assets/jkhx.ttf');
+    font-family: "Zhuque Fangsong (technical preview)";
+    src: url('/assets/Zhuque.woff2');
 }
 body {
     margin: 0;
