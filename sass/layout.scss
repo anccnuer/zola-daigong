@@ -85,3 +85,15 @@ footer {
         color: red;
     }
 }
+
+#about {
+    font-size: 1.3rem;
+    #back-home {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+    }
+    @media screen and (max-width:400px) {
+        margin: 0 1rem;
+    }
+}
