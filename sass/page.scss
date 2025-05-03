@@ -38,7 +38,8 @@
 
 #back-btn {
     color: rgba(0, 0, 0, 0.678);
-    display: inline;
+    display: inline-block;
     font-size: 2.3rem;
     margin-right: auto;
+    transform: scaleX(-1);
 }
