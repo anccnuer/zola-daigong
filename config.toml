@@ -5,3 +5,6 @@ title = "怠工日志"
 
 [markdown]
 highlight_code = false
+
+[extra]
+paginate_by = 5

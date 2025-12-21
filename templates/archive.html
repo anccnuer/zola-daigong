@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import "macros/post-list.html" as list %}
+
+{% block content %}
+<div class="lists">
+  {% for page in paginator.pages %}
+    {{ list::list(page=page) }}
+  {% endfor %}
+  
+  {% if paginator.number_pagers > 1 %}
+  <div class="pagination">
+    {% if paginator.previous %}
+      <a href="{{ paginator.previous }}" class="pagination-prev">上一页</a>
+    {% endif %}
+    
+    {% for num in range(start=1, end=paginator.number_pagers + 1) %}
+      <a href="{{ paginator.base_url }}{{ num }}" 
+         class="pagination-item {% if num == paginator.current_index %}active{% endif %}">
+        {{ num }}
+      </a>
+    {% endfor %}
+    
+    {% if paginator.next %}
+      <a href="{{ paginator.next }}" class="pagination-next">下一页</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}
