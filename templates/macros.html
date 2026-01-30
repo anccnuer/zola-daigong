@@ -1,0 +1,11 @@
+{% macro page_title() %}
+{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}
+{% endmacro %}
+
+{% macro header() %}
+<header>
+    <a class="title" href="{{ config.base_url }}">
+        <h1>{{ config.title }}</h1>
+    </a>
+</header>
+{% endmacro %}

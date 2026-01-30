@@ -1,0 +1,23 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# Site title and description
+title = "怠工日志"
+description = "这是一个使用Zola构建的博客"
+#language_code = "zh-CN"
+
+# Pagination settings
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# Put all your custom variables here
