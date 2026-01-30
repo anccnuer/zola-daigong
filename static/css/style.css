@@ -433,6 +433,7 @@ header  a h1 {
 .title h1,
 .title h2 {
     font-size: 3.5em;
+    text-align: center;
 }
 
 .title:hover {
@@ -681,6 +682,7 @@ tr:hover td {
     h1 {
         font-size: 2.25rem;
         line-height: 1.2;
+        text-align: center;
     }
     
     h2 {
@@ -719,20 +721,26 @@ tr:hover td {
     }
     
     .post-item {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: var(--spacing-lg);
-        padding: var(--spacing-md);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        padding: var(--spacing-sm) 0;
     }
     
     .post-item a {
         font-size: 1.05rem;
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: 0;
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .post-item time {
-        margin-left: 0;
+        margin-left: var(--spacing-md);
         font-size: 0.9rem;
+        white-space: nowrap;
     }
     
     .tags {
@@ -787,6 +795,7 @@ tr:hover td {
     
     .title h1 {
         font-size: 2rem;
+        text-align: center;
     }
     
     footer {
