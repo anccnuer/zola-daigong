@@ -696,7 +696,7 @@ tr:hover td {
     }
     article > h1::before {
         content: "🖋";
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     body {
