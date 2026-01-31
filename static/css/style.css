@@ -704,7 +704,7 @@ tr:hover td {
     }
     
     main {
-        margin-top: var(--spacing-lg);
+        margin-top: var(--spacing-sm);
     }
     
     pre {
@@ -725,7 +725,11 @@ tr:hover td {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 0;
-        padding: var(--spacing-sm) 0;
+        padding: var(--spacing-xs) 0;
+    }
+    
+    .post-divider {
+        margin: 2px 0;
     }
     
     .post-item a {
@@ -790,12 +794,13 @@ tr:hover td {
     
     /* 移动端导航优化 */
     header {
-        padding: var(--spacing-md) 0;
+        padding: var(--spacing-sm) 0;
     }
     
     .title h1 {
         font-size: 2rem;
         text-align: center;
+        margin-bottom: var(--spacing-sm);
     }
     
     footer {
